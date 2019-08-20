@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="assests/css/main.css">
+</head>
+<body>
+    <div class="parent-container">
+        <div class="center-container visible-border">
+            <div class="text-center">
+                <h1 class="title">Simple Calulator</h1>
+            </div>
+            <form id="calculator">
+                <div class="canvas">
+                    <input id="solve-sheet" type="text" value="0" autocomplete="off">
+                    <input id="answer-sheet" type="text" value="" autocomplete="off" readonly>
+                </div>
+                <div class="btn-group">
+                    <div class="row">
+                        <button class="calc-btn special-btn calc-input" role="" value="(">(</button>
+                        <button class="calc-btn special-btn calc-input false-start" role="" value=")">)</button>
+                        <button class="calc-btn special-btn calc-input false-start operator" role="" value="%">%</button>
+                        <button id="clear-spread" class="calc-btn special-btn" role="" value="DEL">DEL</button>
+                    </div>
+                    <div class="row">
+                        <button class="calc-btn calc-input" role="+" value="7">7</button>
+                        <button class="calc-btn calc-input" role="-" value="8">8</button>
+                        <button class="calc-btn calc-input" role="/" value="9">9</button>
+                        <button class="calc-btn special-btn calc-input false-start operator" role="x" value="&#xF7">&#xF7</button>
+                    </div>
+                    <div class="row">
+                        <button class="calc-btn calc-input" role="9" value="4">4</button>
+                        <button class="calc-btn calc-input" role="8" value="5">5</button>
+                        <button class="calc-btn calc-input" role="7" value="6">6</button>
+                        <button class="calc-btn special-btn calc-input false-start operator" role="x" value="x">x</button>
+                    </div>
+                    <div class="row">
+                        <button class="calc-btn calc-input" role="5" value="1">1</button>
+                        <button class="calc-btn calc-input" role="4" value="2">2</button>
+                        <button class="calc-btn calc-input" role="3" value="3">3</button>
+                        <button class="calc-btn special-btn calc-input operator" role="2" value="-">-</button>
+                    </div>
+                    <div class="row">
+                        <button class="calc-btn calc-input" role="1" value=".">.</button>
+                        <button class="calc-btn calc-input" role="0" value="0">0</button>
+                        <button id="calculate" class="calc-btn" role="=" value="=">=</button>
+                        <button class="calc-btn special-btn calc-input operator" role="+" value="+">+</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="signature"><img src="assests/img/signature.png" width="80px" alt="Joseph Signature"></div>
+    <script src="assests/js/script.js"></script>
+</body>
+</html>

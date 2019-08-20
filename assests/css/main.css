@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Copse&display=swap');
+
+body {
+    font-family: 'Copse', serif;
+    background-image: linear-gradient(to top,#cfd9df 0,#e2ebf0 100%);
+}
+
+.title {
+    color: white;
+    font-size: 25px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.center-container {
+    max-width: 300px;
+    margin: auto;
+    background-color: #7283a7;
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+}
+
+.visible-border {
+    border: 1px solid gray
+}
+
+.parent-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#solve-sheet, #answer-sheet {
+    width: 100%;
+    border: none;
+    text-align: right;
+    padding: 0.40rem 0rem;
+    padding-right: 0.45rem;
+    padding-left: 0.5rem;
+    border: none;
+    margin-bottom: 0.4rem;
+}
+
+#solve-sheet {
+    color: lightgray;
+    font-size: 30px;
+    color: #698796;
+}
+
+.canvas {
+    background-color: white;
+}
+
+#answer-sheet {
+    color: #263238;
+    font-size: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calc-btn {
+    width: 25%;
+    height: 75px;
+    cursor: pointer;
+    color: white;
+    background-color: none;
+    background-color: transparent;
+    border: none;
+    font-size: 23px;
+}
+
+.calc-btn:hover {
+    background-color: #b1bace;
+}
+
+.special-btn {
+    background-color: #929fba;
+}
+
+#calculator {
+    margin-bottom: 0;
+}
+
+button:focus, input:focus {
+    outline: 0;
+}
+
+#signature {
+    position: fixed;
+    top: 10;
+    text-align: right;
+    right: 5;
+    padding: 0.25rem 0.5rem;
+}
+
+#signature:hover {
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+    transition: 0.5s ease-in;
+}
